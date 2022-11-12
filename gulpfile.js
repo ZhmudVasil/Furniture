@@ -6,9 +6,7 @@ const browserSync = require("browser-sync").create();
 const uglify = require("gulp-uglify-es").default;
 const autoprefixer = require("gulp-autoprefixer");
 const imagemin = require("gulp-imagemin");
-
-// For npm version 14+
-// const del = require("del");
+const del = require("del");
 
 function browsersync() {
   browserSync.init({
@@ -33,13 +31,16 @@ function images() {
     .pipe(dest("dist/images"));
 }
 
-// For npm version 14+
-// function cleanDist() {
-//   return del("dist")
-// }
+function cleanDist() {
+  return del("dist");
+}
 
 function scripts() {
-  return src(["node_modules/jquery/dist/jquery.js", "app/js/main.js"])
+  return src([
+    "node_modules/jquery/dist/jquery.js",
+    "node_modules/slick-carousel/slick/slick.js",
+    "app/js/main.js",
+  ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(dest("app/js"))
@@ -82,13 +83,10 @@ exports.styles = styles;
 exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
+
 exports.build = build;
 exports.images = images;
+exports.cleanDist = cleanDist;
 
-// For npm version 14+
-// exports.cleanDist = cleanDist;
-// exports.build = series(cleanDist,  images, build);
-
-exports.build = series(images, build);
-
+exports.build = series(cleanDist, images, build);
 exports.default = parallel(styles, scripts, browsersync, watching);
