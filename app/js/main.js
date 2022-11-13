@@ -6,12 +6,18 @@ $(function () {
   $(".rightside-menu__close").on("click", function () {
     $(".rightside-menu").addClass("rightside-menu--close");
   });
-});
 
-$(".top__slider").slick({
-  dots: true,
-  arrows: false,
-  fade: true,
-  autoplay: true,
-  autoplayspeed: 100,
+  $(".top__slider").slick({
+    dots: true,
+    arrows: false,
+    fade: true,
+    autoplay: true,
+    autoplayspeed: 1000,
+  });
+
+  var mixer = mixitup(".gallary__inner", {
+    load: {
+      filter: ".living",
+    },
+  });
 });
