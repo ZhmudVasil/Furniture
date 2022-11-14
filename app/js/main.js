@@ -15,6 +15,15 @@ $(function () {
     autoplayspeed: 1000,
   });
 
+  $(".contact-slider").slick({
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplayspeed: 1000,
+    slidesToShow: 10,
+    slidesToScroll: 10,
+  });
+
   var mixer = mixitup(".gallary__inner", {
     load: {
       filter: ".living",

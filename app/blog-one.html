@@ -34,7 +34,9 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Blog</a>
+                  <a class="menu__list-link menu__list-link--active" href="#"
+                    >Blog</a
+                  >
                 </li>
                 <li class="menu__list-item">
                   <a class="menu__list-link" href="#">Contact</a>
@@ -82,6 +84,138 @@
             </ul>
           </div>
         </div>
+        <section class="blog">
+          <div class="container">
+            <div class="blog__inner">
+              <div class="blog__items"></div>
+              <aside class="aside">
+                <form class="aside__search">
+                  <input
+                    class="aside__search-input"
+                    type="text"
+                    placeholder="Search"
+                  />
+                  <button class="aside__search-btn" type="submit">
+                    <img src="images/search-icon.svg" alt="search" />
+                  </button>
+                </form>
+                <div class="blog__category">
+                  <h6 class="blog__category-title">Categories</h6>
+                  <ul class="blog__category-list">
+                    <li class="blog__category-item">
+                      <a class="blog__category-link" href="#">
+                        Dining room (1)
+                      </a>
+                    </li>
+                    <li class="blog__category-item">
+                      <a class="blog__category-link" href="#">
+                        Office furniture (12)
+                      </a>
+                    </li>
+                    <li class="blog__category-item">
+                      <a class="blog__category-link" href="#">
+                        Simple interiror design (2)
+                      </a>
+                    </li>
+                    <li class="blog__category-item">
+                      <a class="blog__category-link" href="#">Design (4)</a>
+                    </li>
+                    <li class="blog__category-item">
+                      <a class="blog__category-link" href="#">
+                        Bedroom Furniture (1)
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="recent-post">
+                  <h6 class="recent-pos__title">Recent Posts</h6>
+                  <ul class="recent-post__list">
+                    <li class="recent-post__item">
+                      <a class="recent-post__item-title" href="#">
+                        Cred selfies edison bulb four dollar toast humblebrag
+                      </a>
+                      <span class="recent-post__date"> August 10, 2020 </span>|
+                      <a class="recent-post__autor" href="#">
+                        by Ann Summers
+                      </a>
+                    </li>
+                    <li class="recent-post__item">
+                      <a class="recent-post__item-title" href="#">
+                        Semiotics fixie four dollar toast, next level woke
+                        scenester direct trade photo booth
+                      </a>
+                      <span class="recent-post__date"> September 30 ,2020 </span
+                      >|
+                      <a class="recent-post__autor" href="#">
+                        by Ann Summers
+                      </a>
+                    </li>
+                    <li class="recent-post__item">
+                      <a class="recent-post__item-title" href="#">
+                        Cred selfies edison bulb four dollar toast humblebrag
+                      </a>
+                      <span class="recent-post__date"> May 2, 2020 </span>|
+                      <a class="recent-post__autor" href="#">
+                        by Ann Summers
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="blog__tags">
+                  <h6 class="blog__tags-title">Tags</h6>
+                  <a class="blog__tags-link" href="#">Dining room futniture</a>
+                  <a class="blog__tags-link" href="#">Chair</a>
+                  <a class="blog__tags-link" href="#">Table</a>
+                  <a class="blog__tags-link" href="#">Bedroom</a>
+                  <a class="blog__tags-link" href="#">Office Furniture</a>
+                </div>
+
+                <ul class="blog__social">
+                  <li class="blog__social-item">
+                    <a href="#" class="blog__social-link">
+                      <img
+                        class="blog__social-link"
+                        src="images/facebook.svg"
+                        alt="facebook"
+                    /></a>
+                  </li>
+                  <li class="blog__social-item">
+                    <a href="#" class="contact__social-link">
+                      <img
+                        class="blog__social-link"
+                        src="images/instagram.svg"
+                        alt="instagram"
+                    /></a>
+                  </li>
+                  <li class="blog__social-item">
+                    <a href="#" class="contact__social-link">
+                      <img
+                        class="blog__social-link"
+                        src="images/pinterest.svg"
+                        alt="pinterest"
+                    /></a>
+                  </li>
+                  <li class="blog__social-item">
+                    <a href="#" class="contact__social-link">
+                      <img
+                        class="blog__social-link"
+                        src="images/whatsapp.svg"
+                        alt="whatsapp"
+                    /></a>
+                  </li>
+                  <li class="blog__social-item">
+                    <a href="#" class="contact__social-link">
+                      <img
+                        class="contact__social-link"
+                        src="images/youtube.svg"
+                        alt="youtube"
+                    /></a>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer class="footer">
@@ -94,7 +228,10 @@
                   Keffiyeh poutine etsy, paleo cray put a bird on it microdosing
                   schlitz you probably occupy
                 </p>
-                <a class="info-email" href="mailto:ouremailaddress@email.com">
+                <a
+                  class="footer__info-email"
+                  href="mailto:ouremailaddress@email.com"
+                >
                   ouremailaddress@email.com
                 </a>
                 <form action="" class="footer__form">
