@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.min.css" />
@@ -21,25 +21,23 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">About</a>
+                  <a class="menu__list-link" href="about.html">About</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Gallery</a>
+                  <a class="menu__list-link" href="gallary.html">Gallery</a>
                 </li>
               </ul>
             </nav>
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
               <img src="images/logo.png" alt="Logo" />
             </a>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__list-item">
-                  <a class="menu__list-link menu__list-link--active" href="#"
-                    >Blog</a
-                  >
+                  <a class="menu__list-link" href="blog.html">Blog</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Contact</a>
+                  <a class="menu__list-link" href="contacts.html">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -79,7 +77,7 @@
                 <a class="breadcrumbs__link" href="">Home</a>
               </li>
               <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="">About</a>
+                <a class="breadcrumbs__link" href="">Blog</a>
               </li>
             </ul>
           </div>
@@ -87,7 +85,139 @@
         <section class="blog">
           <div class="container">
             <div class="blog__inner">
-              <div class="blog__items"></div>
+              <div class="blog__items">
+                <div class="blog__item">
+                  <img
+                    class="blog__item-img"
+                    src="images/blog/big-1.jpg"
+                    alt="image"
+                  />
+                  <div class="blog__item-info">
+                    <span class="blog__item-date"> August 15, 2020 </span>|
+                    <a class="blog__item-author" href="#"> by Ann Summers </a>|
+                    <a class="blog__item-slider" href="#">
+                      Bedroom Furniture
+                    </a>
+                  </div>
+                  <h3 class="blog__item-title">
+                    Red selfies edison bulb four dollar toast humblebrag for the
+                    furniture
+                  </h3>
+                  <p class="blog__item-text">
+                    Everyday carry actually neutra authentic kogi shabby chic
+                    migas small batch craft beer. Literally williamsburg tote
+                    bag farm-to-table mustache ugh deep v irony. Af man bun
+                    copper mug iPhone enamel pin pug selvage hammock palo santo
+                    godard thundercats coloring book yuccie woke. Ugh pok pok
+                    taxidermy pabst enamel pin edison bulb farm-to-table
+                  </p>
+                </div>
+                <blockquote class="blog__blochquote">
+                  “Simplicity is not the goal. It is the by-product of a good
+                  idea and modest expectations”
+                  <div class="blog__blochquote-author">Paul Rand</div>
+                </blockquote>
+                <div class="blog__item article-popup">
+                  <div class="article-popup__box">
+                    <img
+                      class="blog__item-img"
+                      src="images/blog/big-2.jpg"
+                      alt="image"
+                    />
+                    <a
+                      class="blog__item-popup"
+                      data-fancybox
+                      href="https://youtu.be/EavLcl_h2po"
+                    >
+                      <img
+                        class="blog__item-play"
+                        src="images/play-button.svg"
+                        alt="Play button"
+                      />
+                    </a>
+                  </div>
+                  <div class="blog__item-info">
+                    <span class="blog__item-date"> August 12, 2020 </span>|
+                    <a class="blog__item-author" href="#">
+                      by Lux Morningstar </a
+                    >|
+                    <a class="blog__item-slider" href="#"> Design </a>
+                  </div>
+                  <h3 class="blog__item-title blog__item-title--slider">
+                    Authentic kogi shabby chic
+                  </h3>
+                </div>
+                <div class="blog__item article-slider">
+                  <div class="article-slider__box">
+                    <img
+                      class="article-slider__img"
+                      src="images/blog/big-3.jpg"
+                      alt="image"
+                    />
+                    <img
+                      class="article-slider__img"
+                      src="images/blog/big-2.jpg"
+                      alt="image"
+                    />
+                    <img
+                      class="article-slider__img"
+                      src="images/blog/big-1.jpg"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="blog__item-info">
+                    <span class="blog__item-date"> August 18, 2020 </span>|
+                    <a class="blog__item-author" href="#"> by Ann Summers </a>|
+                    <a class="blog__item-slider" href="#"> Table Furniture </a>
+                  </div>
+                  <h3 class="blog__item-title">
+                    Semiotics fixie four dollar toast, next level woke
+                  </h3>
+                  <p class="blog__item-text">
+                    Everyday carry actually neutra authentic kogi shabby chic
+                    migas small batch craft beer. Literally williamsburg tote
+                    bag farm-to-table mustache ugh deep v irony. Af man bun
+                    copper mug iPhone enamel pin pug selvage hammock palo santo
+                    godard thundercats coloring book yuccie woke. Ugh pok pok
+                    taxidermy pabst enamel pin edison bulb farm-to-table
+                  </p>
+                </div>
+
+                <div class="pagination">
+                  <a
+                    class="pagination__arrow pagination__arrow-disabled"
+                    href=""
+                  >
+                    <img
+                      class="pagination__arrow-icon"
+                      src="images/arrow-left.svg"
+                      alt="arrow"
+                    />
+                  </a>
+                  <ul class="pagination__list">
+                    <li class="pagination__list-item">
+                      <a
+                        class="pagination__list-num pagination__list-num--active"
+                        href=""
+                        #
+                      >
+                        1
+                      </a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-num" href="" #> 2 </a>
+                    </li>
+                  </ul>
+
+                  <a class="pagination__arrow" href="">
+                    <img
+                      class="pagination__arrow-icon"
+                      src="images/arrow-right.svg"
+                      alt="arrow"
+                    />
+                  </a>
+                </div>
+              </div>
               <aside class="aside">
                 <form class="aside__search">
                   <input
