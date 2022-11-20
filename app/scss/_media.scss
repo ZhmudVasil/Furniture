@@ -1,3 +1,12 @@
+@media (max-width: 1700px) {
+  .contact-slider {
+    padding-bottom: 40px;
+    &__img {
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: 1366px) {
   .collection {
     grid-template-columns: repeat(3, 1fr);
@@ -9,6 +18,11 @@
   .map {
     margin-top: 0;
   }
+  .contact-slider {
+    &__img {
+      height: 200px;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
@@ -19,6 +33,11 @@
     }
     &__slider-img {
       height: 640px;
+    }
+  }
+  .contact-slider {
+    &__img {
+      height: 240px;
     }
   }
 }
@@ -218,6 +237,9 @@
       width: 100%;
     }
   }
+  .slick-dots li {
+    margin: 0 5px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -273,7 +295,11 @@
       display: block;
       padding: 15px 0;
     }
+    &__list-link--active::after {
+      display: none;
+    }
   }
+
   .collection {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
@@ -285,7 +311,8 @@
   .works-pass__title,
   .blog-box__title,
   .about__prev-title,
-  .inspiration__title {
+  .inspiration__title,
+  .contact__title {
     font-size: 28px;
     line-height: 36px;
   }
@@ -310,6 +337,11 @@
     &__item-text {
       margin-right: 10px;
     }
+  }
+}
+@media (max-width: 442px) {
+  .slick-dots li {
+    margin: 0 1px;
   }
 }
 @media (max-width: 375px) {

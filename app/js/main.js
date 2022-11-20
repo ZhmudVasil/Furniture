@@ -26,9 +26,54 @@ $(function () {
     dots: true,
     arrows: false,
     autoplay: true,
-    autoplayspeed: 1000,
     slidesToShow: 10,
     slidesToScroll: 10,
+
+    autoplayspeed: 1000,
+    responsive: [
+      {
+        breakpoint: 1701,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 8,
+        },
+      },
+      {
+        breakpoint: 1511,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 6,
+        },
+      },
+      {
+        breakpoint: 1180,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 791,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 601,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 431,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
   $(".article-slider__box").slick({
